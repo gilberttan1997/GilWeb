@@ -3,69 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Gilbert Tan | Aspiring Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>Learning and building step by step!</p>
+        <div class="container">
+            <h1>Gilbert Tan</h1>
+            <p>Aspiring Software Engineer</p>
+        </div>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
     <main>
-        <section id="about">
+        <section id="about" class="container">
             <h2>About Me</h2>
-            <p>Hello! I'm Gilbert Tan, and this is my personal website. I'm passionate about coding and continuous learning.</p>
+            <p>Hello! My name is Gilbert Tan, and I'm passionate about building software solutions that solve real-world problems. I'm currently honing my skills in web development, data analysis, and cloud computing.</p>
         </section>
-        <section id="contact">
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Project 1: Portfolio Website</h3>
+                    <p>A fully responsive website to showcase my personal projects and skills.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Task Automation Tool</h3>
+                    <p>A tool built with Python to automate repetitive tasks, saving hours of manual work.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3: Data Dashboard</h3>
+                    <p>An interactive Power BI dashboard for real-time data analysis and insights.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, and JavaScript</li>
+                <li>Python and Power Platform</li>
+                <li>Data Visualization with Power BI</li>
+                <li>Azure Cloud Fundamentals</li>
+            </ul>
+        </section>
+        <section id="contact" class="container">
             <h2>Contact</h2>
-            <p>You can reach me at: <a href="mailto:gilbert@example.com">gilbert@example.com</a></p>
+            <p>If you'd like to connect or collaborate, feel free to reach out!</p>
+            <p>Email: <a href="mailto:gilbert@example.com">gilbert@example.com</a></p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Gilbert Tan. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Gilbert Tan. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
