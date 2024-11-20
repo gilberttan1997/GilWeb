@@ -1,67 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gilbert Tan | Aspiring Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Gilbert Tan</h1>
-            <p>Aspiring Software Engineer</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website Homepage HTML and CSS | CodingGil</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">Gilbert Tan Portfolio</a></h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-        <div class="container">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+    <section class="hero-section">
+      <div class="hero">
+        <h2>Introduction</h2>
+        <p>
+          Welcome to my portfolio in my programming journey. 
+        </p>
+        <p>
+          I am Gilbert Tan, an aspiring software engineer passionate about coding and technology. 
+          This site showcases my projects in Web Development and Coding. 
+          Each project highlights my problem-solving skills and dedication to learning. 
+          Thank you for visiting, and feel free to connect with me.
+        </p>
+        <div class="buttons">
+          <a href="#" class="join">Join Now</a>
+          <a href="#" class="learn">Learn More</a>
         </div>
-    </nav>
-    <main>
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <p>Hello! My name is Gilbert Tan, and I'm passionate about building software solutions that solve real-world problems. I'm currently honing my skills in web development, data analysis, and cloud computing.</p>
-        </section>
-        <section id="projects" class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <h3>Project 1: Portfolio Website</h3>
-                    <p>A fully responsive website to showcase my personal projects and skills.</p>
-                </div>
-                <div class="project">
-                    <h3>Project 2: Task Automation Tool</h3>
-                    <p>A tool built with Python to automate repetitive tasks, saving hours of manual work.</p>
-                </div>
-                <div class="project">
-                    <h3>Project 3: Data Dashboard</h3>
-                    <p>An interactive Power BI dashboard for real-time data analysis and insights.</p>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML, CSS, and JavaScript</li>
-                <li>Python and Power Platform</li>
-                <li>Data Visualization with Power BI</li>
-                <li>Azure Cloud Fundamentals</li>
-            </ul>
-        </section>
-        <section id="contact" class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to connect or collaborate, feel free to reach out!</p>
-            <p>Email: <a href="mailto:gilbert@example.com">gilbert@example.com</a></p>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Gilbert Tan. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+      </div>
+      <div class="img">
+        <img src="https://www.pngkey.com/png/full/649-6494832_i-start-coding-many-programming-languages-which-are.png" alt="hero image" />
+      </div>
+    </section>
+  </body>
 </html>
